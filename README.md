@@ -26,7 +26,7 @@
 
 ### PHP
 1. All includes must be stored at `/inc`.
-2. Autoload follows PSR-4 standard. Ex: `\Jlx\DirName\ClassName` = `./inc/DirName/ClassName.php`.
+2. Autoload follows PSR-4 standard. Ex: `\MyApp\DirName\ClassName` = `./inc/DirName/ClassName.php`.
 3. See `composer.json` >> `repositories` to view my utility packages which will help in dev process and will allow you to keep the same structure and common code base between different projects.
 
 ### JS

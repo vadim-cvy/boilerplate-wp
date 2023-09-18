@@ -3,7 +3,7 @@
 Plugin Name:
 Description:
 Version: 1.0.0
-Text Domain: jlx
+Text Domain: myapp
 */
 
 if ( ! defined( 'ABSPATH' ) ) exit;

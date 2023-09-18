@@ -1,5 +1,5 @@
 <?php
-namespace Jlx;
+namespace MyApp;
 
 if ( ! defined( 'ABSPATH' ) ) exit;
 

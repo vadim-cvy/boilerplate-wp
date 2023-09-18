@@ -1,8 +1,8 @@
 {
-  "name": "jlx/wp-app",
+  "name": "myapp/wp-app",
   "autoload": {
     "psr-4": {
-      "Jlx\\": "/inc"
+      "MyApp\\": "/inc"
     }
   },
   "require": {},
