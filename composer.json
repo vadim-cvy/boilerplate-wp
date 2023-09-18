@@ -2,7 +2,7 @@
   "name": "myapp/wp-app",
   "autoload": {
     "psr-4": {
-      "MyApp\\": "/inc"
+      "MyApp\\": "inc/"
     }
   },
   "require": {},
