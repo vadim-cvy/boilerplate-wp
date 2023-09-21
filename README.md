@@ -35,5 +35,5 @@
     * WebPack will detect entry points automatically - no need to add them manually to config file.
     * Entry points are handled like this: `/assets/js/src/{entry-point-name}/.index.ts` will be compiled into `/assets/js/dist/{entry-point-name}/index{.min}.js`.
 3. Compilation
-    * Execute `npm run dev` to make webpack watch your changes during dev process (js will be re-compiled each time file is saved). Files generated during dev process will contain `.dev` in their names and must be used in local/staging environment only.
-    * Execute `npm run build` to compile production-ready js files. Files generated during build process will contain `.prod` in their names and must be used in production environment.
+    * Execute `npm run dev` to make webpack watch your changes during dev process (js will be re-compiled each time file is saved). Compiled files have `.dev.js` extension and must be used in local/staging environment only.
+    * Execute `npm run build` to compile production-ready js files. Compiled files have `.prod.js` extension and must be used in production environment.
