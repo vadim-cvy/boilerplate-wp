@@ -21,10 +21,6 @@
     },
     {
       "type": "vcs",
-      "url": "https://github.com/vadim-cvy/util-wp-user.git"
-    },
-    {
-      "type": "vcs",
       "url": "https://github.com/vadim-cvy/util-wp-term.git"
     },
     {
@@ -34,10 +30,6 @@
     {
       "type": "vcs",
       "url": "https://github.com/vadim-cvy/util-wp-objects-query.git"
-    },
-    {
-      "type": "vcs",
-      "url": "https://github.com/vadim-cvy/util-wp-users-query.git"
     },
     {
       "type": "vcs",
