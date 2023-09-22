@@ -58,6 +58,10 @@
     {
       "type": "vcs",
       "url": "https://github.com/vadim-cvy/util-wp-beaver-builder-astra-compatibility.git"
+    },
+    {
+      "type": "vcs",
+      "url": "https://github.com/vadim-cvy/util-wp-metaboxes.git"
     }
   ]
 }
