@@ -66,6 +66,10 @@
     {
       "type": "vcs",
       "url": "https://github.com/vadim-cvy/util-wp-shortcodes.git"
+    },
+    {
+      "type": "vcs",
+      "url": "https://github.com/vadim-cvy/util-wp-site-pages.git"
     }
   ]
 }
