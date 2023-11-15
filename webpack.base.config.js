@@ -2,13 +2,10 @@ const path = require('path')
 const glob = require('glob')
 
 module.exports = () => ({
-  /**
-   * Entry points are detected by the following pattern: './assets/js/src/{entry-point-name}/index.ts
-   */
   entry: () => {
     const entryPoints = {}
 
-    const srcDir = path.resolve(__dirname, 'assets/js/src')
+    const srcDir = path.resolve(__dirname, 'assets/src/js')
     const subDirs = glob.sync(`${srcDir}/*/index.ts`)
 
     subDirs.forEach(subDir => {
@@ -19,6 +16,9 @@ module.exports = () => ({
     })
 
     return entryPoints
+  },
+  output: {
+    path: path.resolve(__dirname, 'assets/dist/js'),
   },
   resolve: {
     extensions: ['.ts', '.js'],
@@ -32,4 +32,5 @@ module.exports = () => ({
       },
     ],
   },
+  externals: {},
 })
