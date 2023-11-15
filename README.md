@@ -29,11 +29,9 @@
 2. Autoload follows PSR-4 standard. Ex: `\MyApp\DirName\ClassName` = `./inc/DirName/ClassName.php`.
 3. See `composer.json` >> `repositories` to view my utility packages which will help in dev process and will allow you to keep the same structure and common code base between different projects.
 
-### JS
-1. Prefer TypeScript over common JS.
-2. JS is bundled and compiled with WebPack:
-    * WebPack will detect entry points automatically - no need to add them manually to config file.
-    * Entry points are handled like this: `/assets/js/src/{entry-point-name}/.index.ts` will be compiled into `/assets/js/dist/{entry-point-name}/index{.min}.js`.
-3. Compilation
-    * Execute `npm run dev` to make webpack watch your changes during dev process (js will be re-compiled each time file is saved). Compiled files have `.dev.js` extension and must be used in local/staging environment only.
-    * Execute `npm run build` to compile production-ready js files. Compiled files have `.prod.js` extension and must be used in production environment.
+### JS & CSS
+1. `/assets/src/css/{entry-point-name}/index.scss` will be compiled into `/assets/dist/css/{entry-point-name}.css`.
+2. `/assets/src/js/{entry-point-name}/index.ts` will be compiled into `/assets/dist/js/{entry-point-name}.{dev|prod}.js`.
+3. Commands
+    * `npm run dev` - watches source files changes and compiles dev assets. Should be used during development.
+    * `npm run build` - generates production ready assets.
