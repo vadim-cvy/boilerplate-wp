@@ -1,5 +1,4 @@
 {
-  "name": "jlx/package-name-here",
   "autoload": {
     "psr-4": {
       "Jlx\\": "inc/"
@@ -81,17 +80,3 @@
     }
   ]
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
