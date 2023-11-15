@@ -3,7 +3,7 @@ const sass = require('gulp-sass')(require('sass'));
 const rename = require('gulp-rename');
 const path = require('path');
 
-const srcDir = './assets/src/scss';
+const srcDir = './assets/src/css';
 const distDir = './assets/dist/css';
 
 gulp.task('scss', () => {
@@ -13,8 +13,6 @@ gulp.task('scss', () => {
     .pipe(rename(path =>
     {
       path.dirname = path.dirname.split( '\\' ).reverse()[0]
-
-      path.extname = '.min' + path.extname
     }))
     .pipe(gulp.dest(distDir));
 });
