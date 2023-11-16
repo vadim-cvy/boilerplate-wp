@@ -23,6 +23,7 @@
     * "MyApp"
     * "MYAPP"
     * "myapp"
+4. Search for "todo" and follow the instructions (if any todo are found).
 
 ---
 
