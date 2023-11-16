@@ -4,7 +4,9 @@
       "MyApp\\": "inc/"
     }
   },
-  "require": {},
+  "require": {
+    "cvy/util-wp-env": "^1.0"
+  },
   "repositories": [
     {
       "type": "vcs",
@@ -77,6 +79,10 @@
     {
       "type": "vcs",
       "url": "https://github.com/vadim-cvy/util-wp-thirdparty-links-handler.git"
+    },
+    {
+      "type": "vcs",
+      "url": "https://github.com/vadim-cvy/util-wp-env.git"
     }
   ]
 }
