@@ -19,6 +19,10 @@
 ### Common
 1. Execute `composer install`.
 2. Execute `npm install`.
+3. Search & replace namespace related occurancies:
+    * "MyApp"
+    * "MYAPP"
+    * "myapp"
 
 ---
 
