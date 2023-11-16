@@ -31,7 +31,7 @@
 
 ### JS & CSS
 1. `/assets/src/css/{entry-point-name}/index.scss` will be compiled into `/assets/dist/css/{entry-point-name}.css`.
-2. `/assets/src/js/{entry-point-name}/index.ts` will be compiled into `/assets/dist/js/{entry-point-name}.{dev|prod}.js`.
+2. `/assets/src/js/{entry-point-name}/index.ts` will be compiled into `/assets/dist/js/{entry-point-name}/index.{dev|prod}.js`.
 3. Commands
     * `npm run dev` - watches source files changes and compiles dev assets. Should be used during development.
     * `npm run build` - generates production ready assets.
