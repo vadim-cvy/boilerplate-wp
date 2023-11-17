@@ -15,3 +15,5 @@ Env::get_instance();
 Env::set_is_grid_pane( true );
 
 \MyApp\Example::do_something();
+
+\MyApp\AllInOneWPMigration::get_instance();

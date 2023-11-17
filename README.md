@@ -24,7 +24,10 @@
     * "MyApp"
     * "MYAPP"
     * "myapp"
-5. Search for "todo" and follow the instructions (if any todo are found).
+5. If you don't use [All In One WP Migration](https://wordpress.org/plugins/all-in-one-wp-migration/) plugin:
+    * Remove `./inc/AllInOneWPMigration.php` file.
+    * Remove `AllInOneWPMigration::get_instance();` line in `./init.php` file.
+6. Search for "todo" and follow the instructions (if any todo are found).
 
 ---
 
