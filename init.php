@@ -14,4 +14,11 @@ require_once __DIR__ . '/vendor/autoload.php';
 Env::get_instance();
 Env::set_is_grid_pane( true );
 
-\MyApp\AllInOneWPMigration::get_instance();
+MyApp\Example::get_instance();
+
+/**
+ * todo:
+ * Execute `composer require cvy/util-wp-all-in-one-migration` if you use "WP All In One Migration" plugin.
+ * Delete this row otherwise.
+ */
+Cvy\WP\AllInOneMigration\Main::get_instance();

@@ -19,15 +19,13 @@
 ### Common
 1. Execute `composer install`.
 2. Execute `npm install`.
-3. Remove example entry points from `./assets/src/css` and `./assets/src/js`.
-4. Search & replace namespace related occurancies:
+3. Search & replace namespace related occurancies:
     * "MyApp"
     * "MYAPP"
     * "myapp"
-5. If you don't use [All In One WP Migration](https://wordpress.org/plugins/all-in-one-wp-migration/) plugin:
-    * Remove `./inc/AllInOneWPMigration.php` file.
-    * Remove `AllInOneWPMigration::get_instance();` line in `./init.php` file.
-6. Search for "todo" and follow the instructions (if any todo are found).
+4. Search for "todo" and follow the instructions (if any todo are found).
+5. Remove example entry points from `./assets/src/css` and `./assets/src/js`.
+6. Remove `./inc/Example.php` file and `MyApp\Example::get_instance();` line from `./init.php`.
 
 ---
 
