@@ -83,6 +83,10 @@
     {
       "type": "vcs",
       "url": "https://github.com/vadim-cvy/util-wp-env.git"
+    },
+    {
+      "type": "vcs",
+      "url": "https://github.com/vadim-cvy/util-wp-all-in-one-migration.git"
     }
   ]
 }
