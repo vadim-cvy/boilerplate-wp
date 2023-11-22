@@ -19,6 +19,14 @@ MyApp\Example::get_instance();
 /**
  * todo:
  * Execute `composer require cvy/util-wp-all-in-one-migration` if you use "WP All In One Migration" plugin.
- * Delete this row otherwise.
+ * Delete this code otherwise.
  */
-Cvy\WP\AllInOneMigration\Main::get_instance();
+Cvy\WP\AllInOneMigration\Main::get_instance()
+  ->set_app_root_dir( MYAPP_ROOT_PATH )
+  ->add_base_export_exclusions()
+  ->add_export_exclusions([
+    'assets/src',
+    'webpack.base.config.js',
+    'webpack.dev.config.js',
+    'webpack.prod.config.js',
+  ]);
