@@ -16,8 +16,7 @@
     * "MYAPP"
     * "myapp"
 4. Search for "todo" and follow the instructions (if any todo are found).
-5. Remove example entry points from `./assets/src/css` and `./assets/src/js`.
-6. Remove `./inc/Example.php` file and `MyApp\Example::get_instance();` line from `./init.php`.
+5. Remove example entry point from `./assets/src/js`.
 
 ---
 

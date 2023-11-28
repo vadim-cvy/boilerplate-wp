@@ -51,5 +51,5 @@ Cvy\WP\Assets\Main::set_app_namespace( 'myapp' );
 
 if ( ! is_admin() )
 {
-  (new Cvy\WP\Assets\CSS( '../../../style.css', [ 'astra-theme-css' ] ))->enqueue();
+  (new Cvy\WP\Assets\CSS( 'global.css', [ 'astra-theme-css' ] ))->enqueue();
 }
