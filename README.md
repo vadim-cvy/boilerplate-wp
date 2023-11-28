@@ -1,22 +1,14 @@
-# Boilerplate for WP plugins and themes
+# Boilerplate for WP theme
+
+## Dependencies:
+* Astra
+* Beaver Builder
+* WP All In One Migration
 
 ---
 
 ## Installation
 
-### Theme
-1. Remove `theme.` name part from `theme.functions.php` and `theme.style.css` files.
-2. Remove `plugin.plugin-name.php`.
-3. Update theme details in `style.css`.
-4. Follow instruction from "Common" section (below).
-
-### Plugin
-1. Rename `plugin.plugin-name.php` file to `{your-plugin-dir-name}.php`.
-2. Remove files starting with `theme.`.
-3. Update plugin details in `{your-plugin-dir-name}.php`.
-4. Follow instruction from "Common" section (below).
-
-### Common
 1. Execute `composer install`.
 2. Execute `npm install`.
 3. Search & replace namespace related occurancies:

@@ -5,7 +5,10 @@
     }
   },
   "require": {
-    "cvy/util-wp-env": "^1.0"
+    "cvy/util-wp-env": "^1.0",
+    "cvy/util-wp-all-in-one-migration": "^1.0",
+    "cvy/util-wp-beaver-builder-astra-compatibility": "^2.1",
+    "cvy/util-wp-assets": "^2.0"
   },
   "repositories": [
     {

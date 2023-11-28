@@ -3,9 +3,9 @@ namespace MyApp;
 
 if ( ! defined( 'ABSPATH' ) ) exit;
 
-class Example extends \Cvy\DesignPatterns\Singleton
+class Example
 {
-  protected function __construct()
+  public function __construct()
   {
     error_log( 'Hello :)' );
   }
