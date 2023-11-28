@@ -16,8 +16,6 @@ gulp.task('scss', () => {
 
       path.basename = nameParts.pop()
       path.dirname = nameParts.length ? nameParts.concat( '/' ) : ''
-
-      console.log( path )
     }))
     .pipe(gulp.dest(distDir));
 });
