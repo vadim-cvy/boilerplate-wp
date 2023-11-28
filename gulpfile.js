@@ -12,7 +12,12 @@ gulp.task('scss', () => {
     .pipe(sass().on('error', sass.logError))
     .pipe(rename(path =>
     {
-      path.dirname = path.dirname.split( '\\' ).reverse()[0]
+      const nameParts = path.dirname.split( '\\' ).slice( 3 )
+
+      path.basename = nameParts.pop()
+      path.dirname = nameParts.length ? nameParts.concat( '/' ) : ''
+
+      console.log( path )
     }))
     .pipe(gulp.dest(distDir));
 });
