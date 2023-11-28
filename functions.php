@@ -3,4 +3,4 @@ if ( ! defined( 'ABSPATH' ) ) exit;
 
 require_once __DIR__ . '/init.php';
 
-new MyApp\Example();
+\MyApp\SitePages\SinglePage::get_instance();
