@@ -1,0 +1,13 @@
+$common-transition-time: .2s;
+
+// Todo: update values based on your BB settings
+$laptop-width: 1200;
+$tablet-width: 960;
+$mobile-width: 768;
+
+$breakpoint-laptop: "max-width: " + $laptop-width + "px";
+$breakpoint-over-laptop: "min-width: " + ( $laptop-width + 1 ) + "px";
+$breakpoint-tablet: "max-width: " + $tablet-width + "px";
+$breakpoint-over-tablet: "min-width: " + ( $tablet-width + 1 ) + "px";
+$breakpoint-mobile: "max-width: " + $mobile-width + "px";
+$breakpoint-over-mobile: "min-width: " + ( $mobile-width + 1 ) + "px";
