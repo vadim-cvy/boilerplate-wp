@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "1f2f4e8e3d48451e090c7d9867396f46",
+    "content-hash": "173fa5a901e25a03755939bd316ce2d6",
     "packages": [
         {
             "name": "cvy/util-design-patterns",
