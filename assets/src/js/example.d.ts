@@ -1,0 +1,1 @@
+declare const exampleVar: { foo: string, bar: int }

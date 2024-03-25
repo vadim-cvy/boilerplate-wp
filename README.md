@@ -16,7 +16,7 @@
     * "MYAPP"
     * "myapp"
 4. Search for "todo" and follow the instructions (if any todo are found).
-5. Remove example entry point from `./assets/src/js`.
+5. Remove example dirs from `./assets/src/js/` and `./assets/src/css/`.
 
 ---
 

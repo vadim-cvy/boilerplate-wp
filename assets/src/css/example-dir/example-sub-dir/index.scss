@@ -1,0 +1,12 @@
+@import '../../vars.scss';
+@import './example-secondary.scss';
+
+body
+{
+  color: white;
+
+  @media screen and (vars.$breakpoint-laptop)
+  {
+    color: yellow;
+  }
+}

@@ -6,13 +6,12 @@ module.exports = () => ({
     const entryPoints = {}
 
     const srcDir = path.resolve(__dirname, 'assets/src/js')
-    const subDirs = glob.sync(`${srcDir}/*/index.ts`)
+    const entryPointFiles = glob.sync(`${srcDir}/**/index.ts`)
 
-    subDirs.forEach(subDir => {
-      subDir = path.resolve(__dirname, subDir )
+    entryPointFiles.forEach(fileRelPath => {
+      const outputRelPath = path.dirname( fileRelPath.split( '\\js\\' )[1] )
 
-      const entryPointName = path.basename(path.dirname(subDir))
-      entryPoints[entryPointName] = subDir
+      entryPoints[outputRelPath] = path.resolve( __dirname, fileRelPath )
     })
 
     return entryPoints
