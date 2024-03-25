@@ -2,6 +2,10 @@ const path = require('path')
 const glob = require('glob')
 
 module.exports = () => ({
+  mode: 'development',
+
+  watch: true,
+
   entry: () => {
     const entryPoints = {}
 
@@ -18,10 +22,13 @@ module.exports = () => ({
   },
   output: {
     path: path.resolve(__dirname, 'assets/dist/js'),
+    filename: '[name]/index.js',
   },
+
   resolve: {
     extensions: ['.ts', '.js'],
   },
+
   module: {
     rules: [
       {
@@ -31,5 +38,6 @@ module.exports = () => ({
       },
     ],
   },
+
   externals: {},
 })

@@ -1,3 +1,21 @@
+/*
+ * Base
+ */
+p:last-child {
+  margin-bottom: 0;
+}
+
+/*
+ * Header
+ */
+.site-branding {
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+}
+
+/*
+ * Content
+ */
 .ast-single-entry-banner .ast-container > * {
   position: relative;
   z-index: 1;
