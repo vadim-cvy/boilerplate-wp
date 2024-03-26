@@ -1,13 +1,13 @@
 # Boilerplate for WP theme
 
 ## Installation
-1. Execute `composer install`.
-2. Execute `npm install`.
-3. Search & replace namespace related occurancies:
+1. Search & replace namespace related occurancies:
     * "MyApp"
     * "MYAPP"
     * "myapp"
-4. Search for "todo" and follow the instructions.
+2. Search for "todo" and follow the instructions.
+3. Execute `composer install`.
+4. Execute `npm install`.
 5. Remove example dirs from `./assets/src/js/` and `./assets/src/css/`.
 6. See debug log. Hints (errors) will appear there to guide you on the further things that must be done (if any).
 
