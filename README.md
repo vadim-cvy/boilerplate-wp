@@ -23,6 +23,6 @@
     * All includes must be stored at `/inc`.
     * Autoload follows PSR-4 standard. Ex: `\MyApp\DirName\ClassName` = `./inc/DirName/ClassName.php`.
 * JS & CSS
-    * `npm run watch` watches `./assets/src/` files changes and compiles them into `./assets/dist/`.
+    * `npm run dev` watches `./assets/src/` files changes and compiles them into `./assets/dist/`.
         * `/assets/src/css/your/path/to/index.scss` will be compiled into `/assets/dist/css/your/path/to/index.css`.
         * `/assets/src/js/your/path/to/index.ts` will be compiled into `/assets/dist/js/your/path/to/index.js`.
