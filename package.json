@@ -1,8 +1,8 @@
 {
   "scripts": {
-    "watch": "npm-run-all --parallel watch-js watch-css",
-    "watch-js": "webpack --watch --config webpack.config.js",
-    "watch-css": "gulp watch"
+    "dev": "npm-run-all --parallel dev-js dev-css",
+    "dev-js": "webpack --watch --config webpack.config.js",
+    "dev-css": "gulp watch"
   },
   "devDependencies": {
     "glob": "^10.3.10",
