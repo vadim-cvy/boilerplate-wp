@@ -32,7 +32,7 @@ class Validator extends \MyApp\Utils\DesignPatterns\Singleton
 
     $this->validate_search_engine_visibility();
 
-    if ( defined( 'MYAPP_IS_GRIDPANE' ) && MYAPP_IS_GRIDPANE )
+    if ( MYAPP_IS_GRIDPANE )
     {
       GridPaneValidator::validate();
     }
