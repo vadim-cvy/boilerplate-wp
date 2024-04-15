@@ -121,10 +121,7 @@ class Validator extends \MyApp\Utils\DesignPatterns\Singleton
       }
     }
 
-
-    $js_handle = Assets::enqueue_local_js( 'env-validator' );
-
-    wp_localize_script( $js_handle, 'myappEnvValidator', [
+    $js_handle = Assets::enqueue_local_js( 'env-validator', [], [
       'errors' => [
         'general' => static::$general_errors,
         'critical' => static::$critical_errors,
