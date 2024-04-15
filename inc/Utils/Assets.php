@@ -14,7 +14,11 @@ class Assets
     return $handle;
   }
 
-  static public function enqueue_local_js( string $basedir_rel_path, array $deps = [] ) : string
+  static public function enqueue_local_js(
+    string $basedir_rel_path,
+    array $deps = [],
+    array $data_to_localize = null
+  ) : string
   {
     $handle = static::get_local_asset_handle( $basedir_rel_path );
 
@@ -23,15 +27,34 @@ class Assets
       static::get_local_asset_url( $basedir_rel_path, 'js' ),
       $deps,
       static::get_local_asset_version( $basedir_rel_path, 'js' ),
-      true
+      $data_to_localize
     );
 
     return $handle;
   }
 
-  static private function enqueue_js( string $handle, string $src, array $deps, string $version ) : void
+  static private function enqueue_js(
+    string $handle,
+    string $src,
+    array $deps,
+    string $version,
+    array $data_to_localize = null
+  ) : void
   {
-    $cb = fn() => wp_enqueue_script( $handle, $src, $deps, $version, true );
+    $cb = function() use ( $handle, $src, $deps, $version, $data_to_localize )
+    {
+      wp_enqueue_script( $handle, $src, $deps, $version, true );
+
+      if ( isset( $data_to_localize ) )
+      {
+        $localizedObjectName = $handle;
+        $localizedObjectName = preg_replace( '/\W+/', '_', $localizedObjectName );
+        $localizedObjectName = preg_replace( '/_+/', '_', $localizedObjectName );
+        $localizedObjectName = lcfirst( implode( '', array_map( 'ucfirst', explode( '_', $localizedObjectName ) ) ) );
+
+        wp_localize_script( $handle, $localizedObjectName, $data_to_localize );
+      }
+    };
 
     if ( did_action( 'wp_footer' ) || did_action( 'admin_footer' ) )
     {
